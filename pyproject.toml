@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "deciphon-snap"
+version = "0.1.0"
+description = "Reader for Deciphon snap files."
+authors = ["Danilo Horta <horta@ebi.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "deciphon_snap" }]
+
+[tool.poetry.dependencies]
+fsspec = { extras = ["libarchive"], version = ">=2022.11.0" }
+pydantic = "^1.10.9"
+python = "^3.10"
+prettytable = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
